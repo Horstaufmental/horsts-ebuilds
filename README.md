@@ -22,7 +22,7 @@ sudo eselect repository add horsts-ebuilds git https://github.com/Horstaufmental
 
 To remove the repository:
 ```bash
-sudo eselect repository remove horsts-ebuilds
+sudo eselect repository remove -f horsts-ebuilds
 ```
 
 More information can be found [here.](https://wiki.gentoo.org/wiki/Eselect/Repository#Add_repositories)
