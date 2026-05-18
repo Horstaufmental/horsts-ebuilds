@@ -18,6 +18,12 @@ sudo emerge -a app-eselect/eselect-repository
 Add the repository with the following command:
 ```bash
 sudo eselect repository add horsts-ebuilds git https://github.com/Horstaufmental/horsts-ebuilds.git
+# Make sure to sync the repo after adding!
+```
+
+To sync the repository to the latest changes:
+```bash
+sudo emaint sync --repo horsts-ebuilds
 ```
 
 To remove the repository:
@@ -34,7 +40,7 @@ Most ebuilds in this repository will have a `README` file explaining when and wh
 This repository are likely to be pretty quiet, depending if I ever needed to do any custom ebuilds
 for a specific case, that's normal, it's meant to be my personal stuffs anyways.
 
-All my ebuilds are licensed under **GNU General Public License v2 or later (GPLv2+)** (because it includes modifications of Gentoo's official ebuilfs)
+All my ebuilds are licensed under **GNU General Public License v2 or later (GPLv2+)** (because it includes modifications of Gentoo's official ebuilds)
 and are provided AS IS, with no warranty whatsoever. I am NOT responsible for any kernel panics
 or your hentai folder getting deleted from installing one of my ebuilds.
 
